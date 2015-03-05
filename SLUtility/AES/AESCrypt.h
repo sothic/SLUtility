@@ -34,16 +34,11 @@
 + (NSString *)encrypt:(NSString *)message password:(NSString *)password;
 + (NSString *)decrypt:(NSString *)base64EncodedString password:(NSString *)password;
 
-
 + (NSString *)encrypt:(NSString *)message password:(NSData *)password iv:(NSData *)iv;
 + (NSString *)decrypt:(NSString *)base64EncodedString password:(NSData *)password iv:(NSData *) iv;
 
-
-
 + (NSData *)generateSalt64;
-
 + (NSData *)generateIV128;
-
 + (NSData *)generate192Key:(unsigned char *)fixedKey salt:(NSData *)salt;
 
 @end

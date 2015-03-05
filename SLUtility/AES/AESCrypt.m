@@ -82,47 +82,20 @@
 
 + (NSData *)generateSalt64
 {
-//    unsigned char salt[8];
-//    for (int i = 0; i < 8; i++) {
-//        salt[i] = (unsigned char)arc4random();
-//    }
-//
-//    NSData *dataSalt = [NSData dataWithBytes:salt length:sizeof(salt)];
-  
-    
     NSData *dataSalt = [AESCrypt randomDataOfLength:8];
-    
     return dataSalt;
 }
 
 + (NSData *)generateIV128
 {
-//    unsigned char iv[16];
-//    for (int i = 0; i < 16; i++) {
-//        iv[i] = (unsigned char)arc4random();
-//    }
-
-//    unsigned char iv[16] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'};
-//    NSData *dataIV = [NSData dataWithBytes:iv length:sizeof(iv)];
-
-    
     NSData *dataIV = [AESCrypt randomDataOfLength:16];
-
     return dataIV;
 }
 
 + (NSData *)generate192Key:(unsigned char *)fixedKey salt:(NSData *)salt
 {
-    
-    
-   // unsigned char fixedKey [16]= { 0x56, 0x5F, 0x34, 0x97, 0x68, 0x5B, 0xD6, 0xA1, 0x5A, 0x72, 0x5C, 0xA0, 0x32, 0x56, 0x38, 0x0D };
-
-   // unsigned char key[16] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'};
-    
     NSMutableData *keyData = [NSMutableData dataWithBytes:fixedKey length:sizeof(fixedKey)];
-    
     [keyData appendData:salt];
-    
     return keyData;
 }
 
