@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		76B62B30193CF23C003EF54E /* SLUtilities */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 76B62B31193CF23C003EF54E /* Build configuration list for PBXAggregateTarget "SLUtilities" */;
+			buildPhases = (
+				76B62B34193CF268003EF54E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SLUtilities;
+			productName = SLUtilities;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		76B62AF6193CF0C6003EF54E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B62AF5193CF0C6003EF54E /* Foundation.framework */; };
+		76B62AFB193CF0C6003EF54E /* SLUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62AFA193CF0C6003EF54E /* SLUtility.h */; };
+		76B62AFD193CF0C6003EF54E /* SLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62AFC193CF0C6003EF54E /* SLUtility.m */; };
+		76B62B26193CF173003EF54E /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B1D193CF173003EF54E /* AESCrypt.m */; };
+		76B62B27193CF173003EF54E /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76B62B28193CF173003EF54E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B20193CF173003EF54E /* Base64.m */; };
+		76B62B29193CF173003EF54E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B22193CF173003EF54E /* NSData+Base64.m */; };
+		76B62B2A193CF173003EF54E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B25193CF173003EF54E /* NSString+Base64.m */; };
+		76B62B2C193CF1A6003EF54E /* Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B1F193CF173003EF54E /* Base64.h */; };
+		76B62B44193E0D9C003EF54E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B62B43193E0D9C003EF54E /* Security.framework */; };
+		76B62B49193E0ED2003EF54E /* AESCrypt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B1C193CF173003EF54E /* AESCrypt.h */; };
+		76B62B4A193E0ED2003EF54E /* NSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B21193CF173003EF54E /* NSData+Base64.h */; };
+		76B62B4B193E0ED2003EF54E /* NSData+CommonCrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B23193CF173003EF54E /* NSData+CommonCrypto.h */; };
+		76B62B4C193E0ED2003EF54E /* NSString+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B24193CF173003EF54E /* NSString+Base64.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76B62AF0193CF0C6003EF54E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				76B62B49193E0ED2003EF54E /* AESCrypt.h in CopyFiles */,
+				76B62B4A193E0ED2003EF54E /* NSData+Base64.h in CopyFiles */,
+				76B62B4B193E0ED2003EF54E /* NSData+CommonCrypto.h in CopyFiles */,
+				76B62B4C193E0ED2003EF54E /* NSString+Base64.h in CopyFiles */,
+				76B62B2C193CF1A6003EF54E /* Base64.h in CopyFiles */,
+				76B62AFB193CF0C6003EF54E /* SLUtility.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76B62AF2193CF0C6003EF54E /* libSLUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSLUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B62AF5193CF0C6003EF54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76B62AF9193CF0C6003EF54E /* SLUtility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLUtility-Prefix.pch"; sourceTree = "<group>"; };
+		76B62AFA193CF0C6003EF54E /* SLUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLUtility.h; sourceTree = "<group>"; };
+		76B62AFC193CF0C6003EF54E /* SLUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLUtility.m; sourceTree = "<group>"; };
+		76B62B03193CF0C6003EF54E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		76B62B06193CF0C6003EF54E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		76B62B1C193CF173003EF54E /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AESCrypt.h; path = AES/AESCrypt.h; sourceTree = "<group>"; };
+		76B62B1D193CF173003EF54E /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AESCrypt.m; path = AES/AESCrypt.m; sourceTree = "<group>"; };
+		76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+CommonCrypto.m"; path = "AES/NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		76B62B1F193CF173003EF54E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = AES/Base64.h; sourceTree = "<group>"; };
+		76B62B20193CF173003EF54E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = AES/Base64.m; sourceTree = "<group>"; };
+		76B62B21193CF173003EF54E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "AES/NSData+Base64.h"; sourceTree = "<group>"; };
+		76B62B22193CF173003EF54E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "AES/NSData+Base64.m"; sourceTree = "<group>"; };
+		76B62B23193CF173003EF54E /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+CommonCrypto.h"; path = "AES/NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		76B62B24193CF173003EF54E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "AES/NSString+Base64.h"; sourceTree = "<group>"; };
+		76B62B25193CF173003EF54E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "AES/NSString+Base64.m"; sourceTree = "<group>"; };
+		76B62B43193E0D9C003EF54E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76B62AEF193CF0C6003EF54E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B62B44193E0D9C003EF54E /* Security.framework in Frameworks */,
+				76B62AF6193CF0C6003EF54E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76B62AE9193CF0C6003EF54E = {
+			isa = PBXGroup;
+			children = (
+				76B62AF7193CF0C6003EF54E /* SLUtility */,
+				76B62AF4193CF0C6003EF54E /* Frameworks */,
+				76B62AF3193CF0C6003EF54E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76B62AF3193CF0C6003EF54E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76B62AF2193CF0C6003EF54E /* libSLUtility.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76B62AF4193CF0C6003EF54E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B62B43193E0D9C003EF54E /* Security.framework */,
+				76B62AF5193CF0C6003EF54E /* Foundation.framework */,
+				76B62B03193CF0C6003EF54E /* XCTest.framework */,
+				76B62B06193CF0C6003EF54E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76B62AF7193CF0C6003EF54E /* SLUtility */ = {
+			isa = PBXGroup;
+			children = (
+				76B62B1B193CF157003EF54E /* AES */,
+				76B62AFA193CF0C6003EF54E /* SLUtility.h */,
+				76B62AFC193CF0C6003EF54E /* SLUtility.m */,
+				76B62AF8193CF0C6003EF54E /* Supporting Files */,
+			);
+			path = SLUtility;
+			sourceTree = "<group>";
+		};
+		76B62AF8193CF0C6003EF54E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B62AF9193CF0C6003EF54E /* SLUtility-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76B62B1B193CF157003EF54E /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				76B62B1C193CF173003EF54E /* AESCrypt.h */,
+				76B62B1D193CF173003EF54E /* AESCrypt.m */,
+				76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */,
+				76B62B1F193CF173003EF54E /* Base64.h */,
+				76B62B20193CF173003EF54E /* Base64.m */,
+				76B62B21193CF173003EF54E /* NSData+Base64.h */,
+				76B62B22193CF173003EF54E /* NSData+Base64.m */,
+				76B62B23193CF173003EF54E /* NSData+CommonCrypto.h */,
+				76B62B24193CF173003EF54E /* NSString+Base64.h */,
+				76B62B25193CF173003EF54E /* NSString+Base64.m */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76B62AF1193CF0C6003EF54E /* SLUtility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B62B15193CF0C6003EF54E /* Build configuration list for PBXNativeTarget "SLUtility" */;
+			buildPhases = (
+				76B62AEE193CF0C6003EF54E /* Sources */,
+				76B62AEF193CF0C6003EF54E /* Frameworks */,
+				76B62AF0193CF0C6003EF54E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLUtility;
+			productName = SLUtility;
+			productReference = 76B62AF2193CF0C6003EF54E /* libSLUtility.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76B62AEA193CF0C6003EF54E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sothic;
+			};
+			buildConfigurationList = 76B62AED193CF0C6003EF54E /* Build configuration list for PBXProject "SLUtility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76B62AE9193CF0C6003EF54E;
+			productRefGroup = 76B62AF3193CF0C6003EF54E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76B62AF1193CF0C6003EF54E /* SLUtility */,
+				76B62B30193CF23C003EF54E /* SLUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76B62B34193CF268003EF54E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target SLUtility ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target SLUtility -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76B62AEE193CF0C6003EF54E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B62B2A193CF173003EF54E /* NSString+Base64.m in Sources */,
+				76B62B28193CF173003EF54E /* Base64.m in Sources */,
+				76B62B26193CF173003EF54E /* AESCrypt.m in Sources */,
+				76B62B29193CF173003EF54E /* NSData+Base64.m in Sources */,
+				76B62AFD193CF0C6003EF54E /* SLUtility.m in Sources */,
+				76B62B27193CF173003EF54E /* NSData+CommonCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76B62B13193CF0C6003EF54E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		76B62B14193CF0C6003EF54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		76B62B16193CF0C6003EF54E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SLUtility.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLUtility/SLUtility-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		76B62B17193CF0C6003EF54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SLUtility.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLUtility/SLUtility-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		76B62B32193CF23C003EF54E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		76B62B33193CF23C003EF54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76B62AED193CF0C6003EF54E /* Build configuration list for PBXProject "SLUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B62B13193CF0C6003EF54E /* Debug */,
+				76B62B14193CF0C6003EF54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B62B15193CF0C6003EF54E /* Build configuration list for PBXNativeTarget "SLUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B62B16193CF0C6003EF54E /* Debug */,
+				76B62B17193CF0C6003EF54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B62B31193CF23C003EF54E /* Build configuration list for PBXAggregateTarget "SLUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B62B32193CF23C003EF54E /* Debug */,
+				76B62B33193CF23C003EF54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76B62AEA193CF0C6003EF54E /* Project object */;
+}
