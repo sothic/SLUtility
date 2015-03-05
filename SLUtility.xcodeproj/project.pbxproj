@@ -26,10 +26,8 @@
 		76B62AFD193CF0C6003EF54E /* SLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62AFC193CF0C6003EF54E /* SLUtility.m */; };
 		76B62B26193CF173003EF54E /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B1D193CF173003EF54E /* AESCrypt.m */; };
 		76B62B27193CF173003EF54E /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		76B62B28193CF173003EF54E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B20193CF173003EF54E /* Base64.m */; };
 		76B62B29193CF173003EF54E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B22193CF173003EF54E /* NSData+Base64.m */; };
 		76B62B2A193CF173003EF54E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B62B25193CF173003EF54E /* NSString+Base64.m */; };
-		76B62B2C193CF1A6003EF54E /* Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B1F193CF173003EF54E /* Base64.h */; };
 		76B62B44193E0D9C003EF54E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B62B43193E0D9C003EF54E /* Security.framework */; };
 		76B62B49193E0ED2003EF54E /* AESCrypt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B1C193CF173003EF54E /* AESCrypt.h */; };
 		76B62B4A193E0ED2003EF54E /* NSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76B62B21193CF173003EF54E /* NSData+Base64.h */; };
@@ -48,7 +46,6 @@
 				76B62B4A193E0ED2003EF54E /* NSData+Base64.h in CopyFiles */,
 				76B62B4B193E0ED2003EF54E /* NSData+CommonCrypto.h in CopyFiles */,
 				76B62B4C193E0ED2003EF54E /* NSString+Base64.h in CopyFiles */,
-				76B62B2C193CF1A6003EF54E /* Base64.h in CopyFiles */,
 				76B62AFB193CF0C6003EF54E /* SLUtility.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,8 +63,6 @@
 		76B62B1C193CF173003EF54E /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AESCrypt.h; path = AES/AESCrypt.h; sourceTree = "<group>"; };
 		76B62B1D193CF173003EF54E /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AESCrypt.m; path = AES/AESCrypt.m; sourceTree = "<group>"; };
 		76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+CommonCrypto.m"; path = "AES/NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		76B62B1F193CF173003EF54E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = AES/Base64.h; sourceTree = "<group>"; };
-		76B62B20193CF173003EF54E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = AES/Base64.m; sourceTree = "<group>"; };
 		76B62B21193CF173003EF54E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "AES/NSData+Base64.h"; sourceTree = "<group>"; };
 		76B62B22193CF173003EF54E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "AES/NSData+Base64.m"; sourceTree = "<group>"; };
 		76B62B23193CF173003EF54E /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+CommonCrypto.h"; path = "AES/NSData+CommonCrypto.h"; sourceTree = "<group>"; };
@@ -142,8 +137,6 @@
 				76B62B1C193CF173003EF54E /* AESCrypt.h */,
 				76B62B1D193CF173003EF54E /* AESCrypt.m */,
 				76B62B1E193CF173003EF54E /* NSData+CommonCrypto.m */,
-				76B62B1F193CF173003EF54E /* Base64.h */,
-				76B62B20193CF173003EF54E /* Base64.m */,
 				76B62B21193CF173003EF54E /* NSData+Base64.h */,
 				76B62B22193CF173003EF54E /* NSData+Base64.m */,
 				76B62B23193CF173003EF54E /* NSData+CommonCrypto.h */,
@@ -222,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B62B2A193CF173003EF54E /* NSString+Base64.m in Sources */,
-				76B62B28193CF173003EF54E /* Base64.m in Sources */,
 				76B62B26193CF173003EF54E /* AESCrypt.m in Sources */,
 				76B62B29193CF173003EF54E /* NSData+Base64.m in Sources */,
 				76B62AFD193CF0C6003EF54E /* SLUtility.m in Sources */,
