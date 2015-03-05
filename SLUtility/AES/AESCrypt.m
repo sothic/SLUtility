@@ -51,7 +51,6 @@
 }
 
 /*for 128 fixed + 64 salt and 128 initial vendor*/
-
 + (NSString *)encrypt:(NSString *)message password:(NSData *)password iv:(NSData *)iv {
     NSData *encryptedData = [[message dataUsingEncoding:NSUTF8StringEncoding] dataEncryptedUsingAlgorithm:kCCAlgorithmAES128 key:password initializationVector:iv options:kCCOptionPKCS7Padding error:nil];
     NSString *base64EncodedString = [NSString base64StringFromData:encryptedData length:[encryptedData length]];
@@ -63,7 +62,6 @@
     NSData *decryptedData = [encryptedData decryptedDataUsingAlgorithm:kCCAlgorithmAES128 key:password  initializationVector: iv  options:kCCOptionPKCS7Padding  error:nil];
     return [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
 }
-
 
 + (NSData *)randomDataOfLength:(size_t)length
 {

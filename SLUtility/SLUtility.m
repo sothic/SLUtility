@@ -54,7 +54,6 @@
     return data;
 }
 
-
 + (NSData *)generateSalt64
 {
     NSData *dataSalt = [SLUtility randomDataOfLength:8];
@@ -73,6 +72,5 @@
     [keyData appendData:salt];
     return keyData;
 }
-
 
 @end
